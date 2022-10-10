@@ -11,8 +11,6 @@ def is_admin():
         def decorated(*args, **kwargs):
             token = request.headers.get('Authorization')
             if token:
-                print(token)
-                print(os.getenv('ADMIN_TOKEN'))
                 if token == os.getenv('ADMIN_TOKEN'):
                     return func(*args, **kwargs)
                 else:
