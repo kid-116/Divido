@@ -5,6 +5,8 @@ from functools import wraps
 
 load_dotenv()
 
+# curl -X POST -H "Content-Type: application/json" -H "Authorization: SL2v4gFFFQ9eEqHvDQ3Y7NGS5uvmI0U5" -d '{"model": "Tesla", "color": "red"}' http://localhost:5000/car
+
 def is_admin():
     def wrapper(func):
         @wraps(func)
