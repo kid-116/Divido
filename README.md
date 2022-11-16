@@ -26,6 +26,7 @@ about the location of the vehicle that is to be monitored and then send the lati
     ```cmd
     python app.py
     ```
+You can also setup the server on [repl.it](https://repl.it/) as it is a free online IDE that supports Python and Flask much easier to setup than a local machine.
 #### Postman
 To interact with the API which has now been setup, we may use an HTTP Client like Postman. Following are the steps to add a new car to the database.
 1. Create a new collection to group similar API requests
