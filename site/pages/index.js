@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import CarCard from '../components/CarCard'
 
 export default function Home() {
-
   const [cars, setCars] = useState([]);
   function getCars() {
     fetch('http://divido.mehultodi.repl.co/car')
@@ -40,6 +39,8 @@ export default function Home() {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/b19048fdd6.js" crossorigin="anonymous"></script>
       </Head>
+      <h1>Divido</h1>
+      <h2>Vehicle Tracking</h2>
       <div class="options">
         {cars.map(car => <CarCard car={car} handleClick={handleClick} key={`car-${car['id']}`} />)}
       </div>

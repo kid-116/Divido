@@ -1,9 +1,3 @@
-const loremPicsum = require("lorem-picsum");
-
-const getRandomInt = (max) => {
-    return Math.floor(Math.random() * Math.floor(max));
-};
-
 export default function CarCard(props) {
     const API_KEY = 'd0a74699e3ef4efcb52d4d4f41ca388b'
     
