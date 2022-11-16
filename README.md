@@ -1,4 +1,11 @@
 # Divido
+## Introduction
+Divido aims to contribute to improving transport accessibility to city centers by providing a solution for car sharing
+
+The system uses Global Positioning System [GPS], to find information
+about the location of the vehicle that is to be monitored and then send the latitude and longitude to the monitoring center through satellite. This information is sent using radio-frequency technology to an ESP32 board that is connected to the internet, and sends requests to an API server. The web app can fetch information from multiple stations and display the information accordingly.
+
+
 
 ## Getting Started
 
